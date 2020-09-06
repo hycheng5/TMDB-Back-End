@@ -49,13 +49,13 @@ class UserController extends Controller
 
     }
     //checks if user owns given movies
-    /*public function checkUserOwnMovies(Request $request){
+    public function checkUserOwnMovieList(Request $request){
         $movieList = $request->input('movie_list');
         $user = User::find($request->input('user_id'));
         $movieResult= $user->movies()->whereIn('movie_id', $movieList)->get();
 
-        return response(200);
-    }*/
+        return $movieResult;
+    }
     public function checkUserOwnsMovie(Request $request){
       $movie_id = $request->input('movie_id');
       $user = User::find($request->input('user_id'));

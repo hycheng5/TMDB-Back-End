@@ -34,4 +34,5 @@ Route::post('/add_movie','UserController@addMovie');
 Route::get('/get_user_movies','UserController@getUserMovies');
 Route::get('/get_user_movie_by_id','UserController@getUserMovieById');
 Route::post('/check_user_owns_movie','UserController@checkUserOwnsMovie');
+Route::post('/check_user_own_movie_list','UserController@checkUserOwnMovieList');
 Route::delete('/remove_movie','UserController@removeMovie');
