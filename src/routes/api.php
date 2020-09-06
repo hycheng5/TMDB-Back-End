@@ -21,12 +21,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::post('/testPost',function(){
-  return "pulled a sneaky";
-});
-
-
-
 Route::get('/get_user_leaves','UserController@getUserLeaves');
 Route::post('/create_leaf','LeafController@createLeaf');
 Route::delete('/delete_leaf','LeafController@deleteLeaf');
