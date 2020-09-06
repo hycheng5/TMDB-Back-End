@@ -6,8 +6,10 @@ first if you do not have docker-compose installed please install docker-composer
   -this should start the basic servers
 3) then type in terminal 'docker-compose run --rm artisan migrate'
   -this will run the migrations within the laravel application
+4) then type in termina 'docker-compose run --rm artisan db:seed'
+  -this will seed the predetermined user
 4) the LAMP server is connected to http://localhost:8080
 
 
 NOTE:
-  -if you need access to the database please use command 'winpty docker-compose exec mysql bash' 
+  -if you need access to the database please use command 'docker-compose exec mysql bash'

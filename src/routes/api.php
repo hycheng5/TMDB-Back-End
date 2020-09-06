@@ -4,7 +4,6 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Task;
 use App\User;
-use App\Leaf;
 use App\Http\Controllers;
 /*
 |--------------------------------------------------------------------------
@@ -21,9 +20,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/get_user_leaves','UserController@getUserLeaves');
-Route::post('/create_leaf','LeafController@createLeaf');
-Route::delete('/delete_leaf','LeafController@deleteLeaf');
 Route::post('/add_movie','UserController@addMovie');
 Route::get('/get_user_movies','UserController@getUserMovies');
 Route::get('/get_user_movie_by_id','UserController@getUserMovieById');
