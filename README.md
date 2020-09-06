@@ -5,6 +5,7 @@ first if you do not have docker-compose installed please install docker-compose
 1) open your terminal
 2) type in terminal 'docker-compose up -d --build site'
   -this should start the basic servers
+3) then type in terminal 'docker-compose run --rm composer install'
 3) then type in terminal 'docker-compose run --rm artisan migrate'
   -this will run the migrations within the laravel application
   -NOTE: IF YOU ENCOUNTER AN ERROR WHEN TRYING TO MIGRATE PLEASE WAIT FOR 5 SECOND AND
