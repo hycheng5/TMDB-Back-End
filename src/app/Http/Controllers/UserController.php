@@ -21,7 +21,7 @@ class UserController extends Controller
 
     }
 
-    //this gets the users movie by id
+    //Gets the users movie by id
     public function getUserMovieById(Request $request){
       $validatedData = $request->validate([
             'user_id' => 'required|integer',
@@ -50,7 +50,7 @@ class UserController extends Controller
       $movie->save();
     }
 
-    //remove the movie id
+    //Removes the movie id
     public function removeMovie(Request $request){
       //add validation
       $validatedData = $request->validate([
@@ -62,7 +62,7 @@ class UserController extends Controller
       return response(200);
 
     }
-    //checks if user owns given movies
+    //Checks if user owns given movies
     public function checkUserOwnMovieList(Request $request){
         $validatedData = $request->validate([
               'user_id' => 'required|integer',
@@ -74,6 +74,8 @@ class UserController extends Controller
 
         return $movieResult;
     }
+
+    //Check is user owns specific movie
     public function checkUserOwnsMovie(Request $request){
       $validatedData = $request->validate([
             'user_id' => 'required|integer',

@@ -1,13 +1,7 @@
 This is how to start up the LAMP environment
-first if you do not have docker-compose installed please install docker-composer
-
-1) Open a new terminal
-2) type './start.sh'
-3) wait for environment to be set up
+first if you do not have docker-compose installed please install docker-compose
 
 
-
-If you don't want to run the  start script:
 1) open your terminal
 2) type in terminal 'docker-compose up -d --build site'
   -this should start the basic servers
