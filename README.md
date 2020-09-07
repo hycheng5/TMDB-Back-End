@@ -17,3 +17,6 @@ first if you do not have docker-compose installed please install docker-compose
 
 NOTE:
   -if you need access to the database please use command 'docker-compose exec mysql bash'
+
+NOTE:
+  -if you are having access errors with the log files that means that you don't have proper access to the storage files in the server to have acces open terminal and type in command 'chmod 777 src'
