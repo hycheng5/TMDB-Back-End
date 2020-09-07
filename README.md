@@ -1,4 +1,4 @@
-This is how to start up the LAMP environment
+This is how to start up the developer environment
 first if you do not have docker-compose installed please install docker-compose
 
 
